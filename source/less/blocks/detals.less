@@ -1,0 +1,361 @@
+.detals {
+  max-width: 708px;
+  padding: 0;
+  margin: 0 auto 12px;
+}
+
+.detals__vrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 92%;
+}
+
+.detals__slogan {
+  padding: 0;
+  margin: 0 0 36px 0;
+  font-size: 36px;
+  line-height: 40px;
+  width: 280px;
+  text-align: left;
+}
+
+.detals__list {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.detals__item {
+  margin: 0 0 45px;
+  width: 272px;
+  min-height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.detals__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url("../../img/green_back_1.svg") no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.detals__leaf::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  background: url("../../img/icon_leaf.svg") no-repeat;
+  background-size: 100%;
+  top: 15px;
+  left: 17px;
+  z-index: 1;
+}
+
+.detals__tub::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 29px;
+  height: 31px;
+  background: url("../../img/icon_tub.svg") no-repeat;
+  background-size: 100%;
+  top: 14px;
+  left: 16px;
+  z-index: 1;
+}
+
+.detals__eat::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 30px;
+  background: url("../../img/icon_eat.svg") no-repeat;
+  background-size: 100%;
+  top: 14px;
+  left: 18px;
+  z-index: 1;
+}
+
+.detals__time::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 33px;
+  background: url("../../img/icon_alarm.svg") no-repeat;
+  background-size: 100%;
+  top: 14px;
+  left: 15px;
+  z-index: 1;
+}
+
+.detals__background {
+  display: none;
+}
+
+.detals__item-text {
+  padding: 0 0 0 77px;
+  margin: 0;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 18px;
+  z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .detals {
+    max-width: 708px;
+    padding: 0;
+    margin: 0 auto 60px;
+  }
+
+  .detals__slogan {
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    width: unset;
+  }
+
+  .detals__vrapper {
+    margin: 0;
+    padding: 0;
+    width: unset;
+  }
+
+  .detals__list {
+    width: unset;
+    padding: 30px 0 0 0;
+    margin: 0 60px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .detals__item {
+    margin: 0 0 45px 0;
+    width: 250px;
+    min-height: 244px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .detals__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url("../../img/green_back_1.svg") no-repeat;
+    background-size: 100%;
+    top: 50px;
+    left: 0;
+    z-index: 0;
+  }
+
+  .detals__leaf::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 32px;
+    background: url("../../img/icon_leaf.svg") no-repeat;
+    background-size: 100%;
+    top: 72px;
+    left: 27px;
+    z-index: 1;
+  }
+
+  .detals__tub::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 29px;
+    height: 31px;
+    background: url("../../img/icon_tub.svg") no-repeat;
+    background-size: 100%;
+    top: 72px;
+    left: 25px;
+    z-index: 1;
+  }
+
+  .detals__eat::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    background: url("../../img/icon_eat.svg") no-repeat;
+    background-size: 100%;
+    top: 72px;
+    left: 27px;
+    z-index: 1;
+  }
+
+  .detals__time::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    background: url("../../img/icon_alarm.svg") no-repeat;
+    background-size: 100%;
+    top: 72px;
+    left: 25px;
+    z-index: 1;
+  }
+
+  .detals__background {
+    display: block;
+    position: absolute;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+    z-index: -1;
+    top: 10px;
+    right: 20px;
+  }
+
+  .detals__item-text {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .detals {
+    max-width: 1220px;
+    padding: 0;
+    margin: 0 auto 86px;
+  }
+
+  .detals__slogan {
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .detals__vrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .detals__list {
+    padding-top: 30px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .detals__item {
+    width: 250px;
+    min-height: 244px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .detals__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url("../../img/green_back_1.svg") no-repeat;
+    background-size: 100%;
+    top: 50px;
+    left: 0;
+    z-index: 0;
+  }
+
+  .detals__leaf::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 32px;
+    background: url("../../img/icon_leaf.svg") no-repeat;
+    background-size: 100%;
+    top: 72px;
+    left: 27px;
+    z-index: 1;
+  }
+
+  .detals__tub::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 29px;
+    height: 31px;
+    background: url("../../img/icon_tub.svg") no-repeat;
+    background-size: 100%;
+    top: 72px;
+    left: 25px;
+    z-index: 1;
+  }
+
+  .detals__eat::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    background: url("../../img/icon_eat.svg") no-repeat;
+    background-size: 100%;
+    top: 72px;
+    left: 27px;
+    z-index: 1;
+  }
+
+  .detals__time::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    background: url("../../img/icon_alarm.svg") no-repeat;
+    background-size: 100%;
+    top: 72px;
+    left: 25px;
+    z-index: 1;
+  }
+
+  .detals__background {
+    position: absolute;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+    z-index: -1;
+    top: 10px;
+    right: 20px;
+  }
+
+  .detals__item-text {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1;
+  }
+}

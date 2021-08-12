@@ -1,0 +1,36 @@
+.typical-button {
+  width: 280px;
+  height: 40px;
+  background: #68b738;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .typical-button {
+    margin: 0;
+    width: 244px;
+    height: 54px;
+    background: #68b738;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

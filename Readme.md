@@ -1,7 +1,7 @@
-# Личный проект «Кэт энерджи»
+# Личный проект «Пинк» 
 
 * Студент: [Ростислав Белоусов](https://up.htmlacademy.ru/adaptive/22/user/1621457).
-* Наставник: `Неизвестно`.
+* Наставник: Виктория Никитина.
 
 ---
 
@@ -24,19 +24,19 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1621457-cat-energy-22) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1621457-pink-22) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808088-259e3a80-a190-11e9-98f7-3c0edd9740f5.jpg">
 
 Получится вот так:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808087-2505a400-a190-11e9-8caa-2e7584c702cc.jpg">
 
 #### 3. Клонируйте репозиторий на свой компьютер
 
 Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808136-3a7ace00-a190-11e9-884f-24621e62b29a.jpg">
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808090-259e3a80-a190-11e9-8a64-c58d94803b73.jpg">
 
 Клонировать репозиторий можно так:
 
@@ -54,5 +54,5 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[check-image]: https://github.com/htmlacademy-adaptive/1621457-cat-energy-22/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/1621457-cat-energy-22/actions
+[check-image]: https://github.com/htmlacademy-adaptive/1621457-pink-22/workflows/Project%20check/badge.svg?branch=master
+[check-url]: https://github.com/htmlacademy-adaptive/1621457-pink-22/actions
