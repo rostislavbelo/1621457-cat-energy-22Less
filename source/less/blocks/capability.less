@@ -5,25 +5,6 @@
   position: relative;
 }
 
-.capability::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 280px;
-  height: 270px;
-  background: url("../../img/mobile/index-can-mobile.png") no-repeat;
-  background-size: 100%;
-  top: 165px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-
-  @media (min-resolution: 2dppx) {
-    background: url("../../img/mobile/index-can-mobile@2x.png") no-repeat;
-    background-size: 100%;
-  }
-}
-
 .capability__main {
   padding: 0;
   margin: 0 0 25px 0;
@@ -31,7 +12,15 @@
   min-height: 286px;
   position: relative;
   text-align: center;
-  background-size: 100%;
+  background: url(../../img/mobile/index-can-mobile.png) no-repeat;
+  background-size: 280px 270px;
+  background-position: 50% 86%;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/mobile/index-can-mobile@2x.png") no-repeat;
+    background-size: 280px 270px;
+    background-position: 50% 86%;
+  }
 }
 
 .capability__main::after {
@@ -39,7 +28,7 @@
   display: block;
   position: absolute;
   width: 100%;
-  height: 302px;
+  height: clamp(300px, 430px, 450px);
   background: url("../../img/mobile/index-background-desktop.jpg") no-repeat;
   background-size: 100%;
   top: 0;
@@ -57,7 +46,7 @@
   display: block;
   position: absolute;
   width: 100%;
-  height: 302px;
+  height: clamp(300px, 430px, 450px);
   background: url("../../img/mobile/rectangle-mobile.png") no-repeat;
   background-size: 100%;
   top: 0;
@@ -198,8 +187,15 @@
   .capability {
     padding: 0;
     margin: 0 auto 50px;
-    max-width: 708px;
+    max-width: 92%;
   }
+
+  .capability__wrapper {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
 
   .capability::after {
     display: none;
@@ -207,9 +203,10 @@
 
   .capability__main {
     padding: 0;
-    margin: 0 0 540px 70px;
+    margin: 0 auto 537px;
     width: 70%;
     position: relative;
+    background: unset;
   }
 
   .capability__main::before {
@@ -224,7 +221,8 @@
     height: 609px;
     background: url("../../img/tablet/index-can-tablet.png") no-repeat;
     background-size: 100%;
-    top: 209px;
+    top: unset;
+    bottom: -531px;
     left: -91px;
     z-index: -1;
 
@@ -261,8 +259,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 100%;
   }
 
   .capability__block-item {
@@ -283,7 +282,8 @@
     background: url("../../img/ellipse.svg") no-repeat;
     background-size: 100%;
     top: 75px;
-    left: 448px;
+    left: unset;
+    right: 59px;
     z-index: 3;
     transform: none;
   }
@@ -297,7 +297,8 @@
     background: url("../../img/cat-slim.svg") no-repeat;
     background-size: 100%;
     top: 65px;
-    left: 480px;
+    left: unset;
+    right: 83px;
     z-index: 4;
     transform: none;
   }
@@ -311,7 +312,8 @@
     background: url("../../img/cat-pro.svg") no-repeat;
     background-size: 100%;
     top: 120px;
-    left: 414px;
+    left: unset;
+    right: 26px;
     z-index: 4;
     transform: none;
   }
@@ -358,47 +360,15 @@
     position: relative;
   }
 
-  .capability::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 720px;
-    height: 694px;
-    background: url("../../img/index-background-desktop1.jpg") no-repeat;
-    background-size: 100%;
-    top: -179px;
-    right: 0;
-    z-index: 0;
-    transform: unset;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../../img/index-background-desktop1@2x.jpg") no-repeat;
-      background-size: 100%;
-    }
-  }
-
   .capability__wrapper {
     padding: 0;
     margin: 0 auto;
     width: 1220px;
   }
 
-  .capability::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 720px;
-    height: 694px;
-    background: url("../../img/rectangle-index.png") no-repeat;
-    background-size: 100%;
-    top: -179px;
-    right: 0;
-    z-index: 1;
-  }
-
   .capability__main {
     padding: 0;
-    margin: 0 0 350px 70px;
+    margin: 0 0 300px 70px;
     width: 40%;
     position: relative;
   }
@@ -412,7 +382,7 @@
     background: url("../../img/index-can.png") no-repeat;
     background-size: 100%;
     top: -39px;
-    left: 377px;
+    left: 368px;
     z-index: 10;
 
     @media (min-resolution: 2dppx) {

@@ -195,7 +195,7 @@
   }
 
   .example__wrapper {
-    max-width: 708px;
+    max-width: 100%;
     padding: 0;
     margin: 0 auto;
     display: flex;
@@ -261,9 +261,9 @@
     background: url(../../img/tablet/before-tablet.png ) no-repeat;
     background-size: 100%;
     top: -2px;
-    left: -2px;
+    left: 50%;
+    transform: translateX(-101%);
     z-index: 1;
-    transform: none;
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/tablet/before-tablet@2x.png") no-repeat;
@@ -279,7 +279,8 @@
     height: 528px;
     background: url("../../img/tablet/after-tablet.png") no-repeat;
     background-size: 100%;
-    right: 2px;
+    left: 50%;
+    transform: translateX(-1%);
     top: 1px;
     z-index: 1;
 
@@ -361,7 +362,7 @@
   .example__scale-input {
     margin: 0 20px 11px;
     display: block;
-    width: 428px;
+    width: 60%;
     height: 6px;
   }
 }
@@ -448,6 +449,7 @@
     background-size: 100%;
     top: -70px;
     left: -83px;
+    transform: unset;
     z-index: 1;
 
     @media (min-resolution: 2dppx) {

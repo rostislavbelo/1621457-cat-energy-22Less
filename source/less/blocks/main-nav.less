@@ -38,13 +38,16 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
+    width: 100%;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: flex-end;
     z-index: 2;
   }
 
   .main-nav__wrapper {
-    width: 500px;
+    width: 90%;
     margin: 34px 0 0 0;
     padding: 0;
   }
@@ -95,16 +98,18 @@
   }
 
   .main-nav__wrapper {
-    width: 500px;
-    margin: 40px 20px 0 0;
+    max-width: 55%;
+    margin: 40px 0 0 0;
     padding: 0;
   }
 
   .main-nav__list {
-    margin: 0;
+    margin: 0 0 0 163px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    width: 88%;
+    justify-content: flex-start;
   }
 
   .main-nav__item-content {

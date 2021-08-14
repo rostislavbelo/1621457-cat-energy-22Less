@@ -27,7 +27,7 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    max-width: 708px;
+    max-width: 92%;
     padding: 0;
     margin: 0 auto 53px;
     display: flex;
@@ -58,11 +58,17 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    max-width: 1220px;
+    //max-width: 1220px;
     padding: 0;
     margin: 0 auto 100px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .page-header__logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-304%);
   }
 
   .page-header__logo {
