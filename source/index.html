@@ -23,8 +23,8 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/tablet/logo-tablet.svg">
-          <img class="page-header__logo-img" src="img/mobile/logo-mobile.svg" alt="Логотип магазина Cat Energy" width="200"
-            height="40">
+          <img class="page-header__logo-img" src="img/mobile/logo-mobile.svg" alt="Логотип магазина Cat Energy"
+            width="200" height="40">
         </picture>
       </a>
     </div>
@@ -50,7 +50,6 @@
       </div>
     </nav>
   </header>
-
   <main class="page-main">
     <section class="capability">
       <div class="capability__wrapper">
@@ -136,11 +135,34 @@
             </li>
           </ul>
         </div>
-        <div class="example__scale-differences">
-          <button class="example__button example__differences-start" type="button">было</button>
-          <input class="example__scale-input" type="range" min="0" max="100" value="50" id="myRange">
-          <button class="example__button example__differences-end" type="button">стало</button>
+        <div class="example__illustration-block">
+        <div class="example__img-wrapper">
+          <picture class="example__img-box example__img-box--before">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/before@2x.webp, img/before@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/before@2x.webp, img/before@2x.webp 2x">
+            <source type="image/webp" srcset="img/mobile/before-mobile@1x.webp, img/mobile/before-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/before@1x.png, img/before@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before@1x.png, img/before@2x.png 2x">
+            <img class="example__demo-img example__demo-img--before" src="img/mobile/before-mobile.png"
+              srcset="img/mobile/before-mobile@2x.png 2x" alt="Фото кота до начала диеты" width="311" height="232">
+          </picture>
+          <picture class="example__img-box example__img-box--after">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/after@2x.webp, img/after@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/after@2x.webp, img/after@2x.webp 2x">
+            <source type="image/webp" srcset="img/mobile/after-mobile@x.webp, img/mobile/after-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/after@1x.png, img/after@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after@1x.png, img/after@2x.png 2x">
+            <img class="example__demo-img example__demo-img--after" src="img/after-mobile@1x.png"
+              srcset="img/mobile/after-mobile@2x.png 2x" alt="Фото кота через 2 месяца диеты" width="251" height="240">
+          </picture>
         </div>
+        <div class="example__scale-differences progress-slider">
+          <button class="example__button progress-slider__button--start" type="button">было</button>
+          <input class="progress-slider__input" type="range" min="0" max="100" value="50" step="1" id="progres-slider">
+          <label class="visually-hidden" for="progres-slider">Результат до и после</label>
+          <button class="example__button progress-slider__button--end" type="button">стало</button>
+        </div>
+      </div>
       </div>
     </section>
     <section class="contacts">
@@ -214,7 +236,6 @@
                   d="M21.0001 2.74976H17.5001C15.953 2.74976 14.4693 3.45999 13.3753 4.72423C12.2813 5.98846 11.6667 7.70313 11.6667 9.49103V13.5358H8.16675V18.9288H11.6667V29.7148H16.3334V18.9288H19.8334L21.0001 13.5358H16.3334V9.49103C16.3334 9.13345 16.4563 8.79051 16.6751 8.53767C16.8939 8.28482 17.1907 8.14277 17.5001 8.14277H21.0001V2.74976Z"
                   stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-
             </a>
           </li>
         </ul>
@@ -226,12 +247,11 @@
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
           </svg>
-
         </a>
       </div>
     </div>
   </footer>
- <script src="./js/script.min.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

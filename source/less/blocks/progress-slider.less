@@ -1,0 +1,113 @@
+.progress-slider__input {
+  margin: 0 20px 11px;
+  display: block;
+  width: 45%;
+  //отключает параметры по умолчанию
+  appearance: none;
+}
+
+
+//ворма и фон инпута
+.progress-slider__input::-webkit-slider-runnable-track {
+  border-radius: 6px;
+  height: 6px;
+  background-color: #dcdcdc;
+}
+
+.progress-slider__input::-ms-track {
+  border-radius: 26px;
+  height: 6px;
+  background-color: #dcdcdc;
+}
+
+.progress-slider__input::-moz-range-track {
+  border-radius: 6px;
+  height: 6px;
+  background-color: #dcdcdc;
+}
+
+//фон и размер двигунка
+.progress-slider__input::-webkit-slider-thumb {
+  appearance: none;
+  margin-top: -13px;
+  border: 12px solid #ffffff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  //тень вокруг
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+  background-color: #68b738;
+}
+
+.progress-slider__input::-moz-range-thumb {
+  box-sizing: border-box;
+  appearance: none;
+  margin-top: -13px;
+  border: 12px solid #ffffff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+  background-color: #68b738;
+}
+
+.progress-slider__input::-ms-thumb {
+  appearance: none;
+  margin-top: -13px;
+  border: 12px solid #ffffff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+  background-color: #68b738;
+}
+
+.progress-slider__input:active {
+  outline: 0;
+}
+
+.progress-slider__input:focus {
+  outline: none;
+}
+
+.progress-slider__input:focus::-webkit-slider-thumb {
+  outline: 3px solid #444444;
+}
+
+.progress-slider__input:focus::-moz-range-thumb {
+  outline: 3px solid #444444;
+}
+
+.progress-slider__input:focus::-ms-thumb {
+  outline: 3px solid #444444;
+}
+
+.progress-slider__input:hover::-webkit-slider-thumb {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+}
+
+.progress-slider__input:hover::-moz-range-thumb {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+}
+
+.progress-slider__input:hover::-ms-thumb {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+}
+
+.progress-slider__input:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 1px #68b738;
+}
+
+.progress-slider__input:active::-moz-range-thumb {
+  box-shadow: 0 0 0 1px #68b738;
+}
+
+.progress-slider__input:active::-ms-thumb {
+  box-shadow: 0 0 0 1px #68b738;
+}
+
+@media (min-width: @tablet-width) {
+  .progress-slider__input {
+    width: 60%;
+  }
+}
