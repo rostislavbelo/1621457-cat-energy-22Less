@@ -1,0 +1,52 @@
+.radio__label {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 0 0 69px;
+  display: flex;
+  min-height: 37px;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+    border: 1px solid #CDCDCD;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    left: 14px;
+    top: 14px;
+    background: #68B738;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+  }
+}
+
+.radio__input:checked+.radio__label::after {
+  display: block;
+}
+
+.radio__label:hover::before {
+  border: 1px solid #BABABA;
+}
+
+.radio__label:active::before,
+.radio__label:active::after {
+  opacity: 0.8;
+}

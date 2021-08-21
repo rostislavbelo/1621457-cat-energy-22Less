@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0 auto;
   max-width: 768px;
-  position: relative;
 }
 
 .capability__main {
@@ -357,7 +356,37 @@
     padding: 0;
     margin: 0 auto 50px;
     max-width: 1440px;
-    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50vw;
+      min-height: 694px;
+      background: rgba(104, 183, 56, 0.85);
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50vw;
+      min-height: 694px;
+      background: url("../../img/index-background-desktop1.jpg") no-repeat;
+      background-size: 100%;
+      top: 0;
+      right: 0;
+      z-index: 0;
+      transform: unset;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../img/index-background-desktop1@2x.jpg") no-repeat;
+        background-size: 100%;
+      }
+    }
   }
 
   .capability__wrapper {

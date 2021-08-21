@@ -12,11 +12,14 @@
   justify-content: center;
   margin: 0 auto;
 
+  &:hover {
+    background: #5EAA2F;
+  }
+
   &:focus {
     color: rgba(255, 255, 255, 0.3);
   }
 }
-
 
 @media (min-width: @tablet-width) {
   .typical-button {
@@ -32,5 +35,116 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.typical-button__catalog,
+.typical-button__additional {
+  width: 168px;
+  height: 40px;
+  background: #68b738;
+  font-family: Oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #5EAA2F;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.typical-button__additional {
+  width: 244px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.typical-button__rest {
+  background: #F2F2F2;
+  color: #444444;
+
+  &:hover {
+    background: #EBEBEB;
+  }
+
+  &:focus {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .typical-button__additional {
+    width: 90%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .typical-button__catalog {
+    width: 248px;
+    height: 39px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .typical-button__rest {
+    background: #F2F2F2;
+    color: #444444;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .typical-button__catalog {
+    width: 90%;
+    height: 40px;
+  }
+
+  .typical-button__additional {
+    width: 100%;
+  }
+
+  .typical-button__rest {
+    background: #F2F2F2;
+    color: #444444;
+  }
+}
+
+.typical-button-form {
+  width: 100%;
+  height: 52px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 0px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  background: #68b738;
+
+  &:hover {
+    background: #5EAA2F;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

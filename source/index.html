@@ -6,6 +6,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet" />
+  <link rel="preload" href="./js/script.min.js" as="script">
   <link rel="preload" href="./css/style.min.css" as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
@@ -36,7 +37,7 @@
         <span></span>
       </button>
       <div class="main-nav__wrapper nojs">
-        <ul class="main-nav__list nojs__main-menu">
+        <ul class="main-nav__list main-nav__list-index nojs__main-menu">
           <li class="main-nav__item">
             <a class="main-nav__item-content main-nav__item-content--active">Главная</a>
           </li>
@@ -44,7 +45,7 @@
             <a class="main-nav__item-content" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-content" href="form.html">Подбор программы</a>
+            <a class="main-nav__item-content " href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -113,8 +114,7 @@
           <p class="example__main-text">Живой пример</p>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и&nbsp;по-прежнему спит по
-            16
-            часов в день.
+            16 часов в день.
           </p>
           <ul class="example__results-list">
             <li class="example__results-item">
@@ -136,36 +136,40 @@
           </ul>
         </div>
         <div class="example__illustration-block">
-        <div class="example__img-wrapper">
-          <picture class="example__img-box example__img-box--before">
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/before@2x.webp, img/before@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/before@2x.webp, img/before@2x.webp 2x">
-            <source type="image/webp" srcset="img/mobile/before-mobile@1x.webp, img/mobile/before-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/before@1x.png, img/before@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before@1x.png, img/before@2x.png 2x">
-            <img class="example__demo-img example__demo-img--before" src="img/mobile/before-mobile.png"
-              srcset="img/mobile/before-mobile@2x.png 2x" alt="Фото кота до начала диеты" width="311" height="232">
-          </picture>
-          <picture class="example__img-box example__img-box--after">
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/after@2x.webp, img/after@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/after@2x.webp, img/after@2x.webp 2x">
-            <source type="image/webp" srcset="img/mobile/after-mobile@x.webp, img/mobile/after-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/after@1x.png, img/after@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/after@1x.png, img/after@2x.png 2x">
-            <img class="example__demo-img example__demo-img--after" src="img/after-mobile@1x.png"
-              srcset="img/mobile/after-mobile@2x.png 2x" alt="Фото кота через 2 месяца диеты" width="251" height="240">
-          </picture>
+          <div class="example__img-wrapper">
+            <picture class="example__img-box example__img-box--before">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/before@2x.webp, img/before@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before@2x.webp, img/before@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/before-mobile.webp, img/mobile/before-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/before@1x.png, img/before@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before@1x.png, img/before@2x.png 2x">
+              <img class="example__demo-img example__demo-img--before" src="img/mobile/before-mobile.png"
+                srcset="img/mobile/before-mobile@2x.png 2x" alt="Фото кота до начала диеты" width="311" height="232">
+            </picture>
+            <picture class="example__img-box example__img-box--after">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/after@2x.webp, img/after@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after@2x.webp, img/after@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/after-mobile.webp, img/mobile/after-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/after@1x.png, img/after@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after@1x.png, img/after@2x.png 2x">
+              <img class="example__demo-img example__demo-img--after" src="img/mobile/after-mobile@1x.png"
+                srcset="img/mobile/after-mobile@2x.png 2x" alt="Фото кота через 2 месяца диеты" width="251"
+                height="240">
+            </picture>
+          </div>
+          <div class="example__scale-differences progress-slider">
+            <button class="example__button progress-slider__button progress-slider__button--start"
+              type="button">было</button>
+            <input class="progress-slider__input" type="range" min="0" max="100" value="50" step="1"
+              id="progres-slider">
+            <label class="visually-hidden" for="progres-slider">Результат до и после</label>
+            <button class="example__button progress-slider__button progress-slider__button--end"
+              type="button">стало</button>
+          </div>
         </div>
-        <div class="example__scale-differences progress-slider">
-          <button class="example__button progress-slider__button--start" type="button">было</button>
-          <input class="progress-slider__input" type="range" min="0" max="100" value="50" step="1" id="progres-slider">
-          <label class="visually-hidden" for="progres-slider">Результат до и после</label>
-          <button class="example__button progress-slider__button--end" type="button">стало</button>
-        </div>
-      </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts contacts-index">
       <div class="contacts__invitation">
         <div class="contacts__block-title">
           <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>

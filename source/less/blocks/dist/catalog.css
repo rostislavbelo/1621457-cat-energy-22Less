@@ -1,0 +1,113 @@
+.catalog {
+  padding: 0;
+  margin: 0 auto;
+  width: 1300px;
+}
+.catalog__main-title {
+  padding: 0;
+  margin: 0 0 163px 0;
+  font-size: 60px;
+  line-height: 60px;
+}
+.catalog__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog__item {
+  padding: 0 39px 39px 39px;
+  width: 167px;
+  min-height: 391px;
+  margin: 0 40px 143px 0;
+  background: #f2f2f2;
+  background-size: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+.catalog__item:nth-child(4n) {
+  margin-right: 0;
+}
+.catalog__name-title {
+  text-align: center;
+  padding: 0 10px 0;
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.catalog__weight,
+.catalog__flavor,
+.catalog__price {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+  border-bottom: 1px solid #CDCDCD;
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
+}
+.catalog__weight-value,
+.catalog__flavor-value,
+.catalog__price-value {
+  display: block;
+}
+.catalog__item-button-order {
+  margin: 33px 0 0 0;
+}
+.catalog__picture {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.catalog__picture-small {
+  width: 161px;
+  height: 172px;
+  top: -53px;
+}
+.catalog__picture-big {
+  width: 172px;
+  height: 201px;
+  top: -78px;
+}
+.catalog__rest::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #D3D3D3;
+  top: 71px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.catalog__rest::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: #D3D3D3;
+  top: 43px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.catalog__rest-text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
+  margin: 0 0 80px 0;
+}
