@@ -1,19 +1,22 @@
 .typical-button {
-  width: 280px;
-  height: 40px;
-  background: #68b738;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
+  width: 280px;
+  height: 40px;
+  background: #68b738;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  border: none;
+  cursor: pointer;
 
   &:hover {
-    background: #5EAA2F;
+    background: #5eaa2f;
   }
 
   &:focus {
@@ -27,42 +30,18 @@
     width: 244px;
     height: 54px;
     background: #68b738;
-    font-weight: normal;
     font-size: 20px;
     line-height: 20px;
-    text-transform: uppercase;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
 .typical-button__catalog,
 .typical-button__additional {
+  .typical-button();
   width: 168px;
   height: 40px;
-  background: #68b738;
-  font-family: Oswald;
-  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    background: #5EAA2F;
-  }
-
-  &:focus {
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
 
 .typical-button__additional {
@@ -73,11 +52,11 @@
 }
 
 .typical-button__rest {
-  background: #F2F2F2;
+  background: #f2f2f2;
   color: #444444;
 
   &:hover {
-    background: #EBEBEB;
+    background: #ebebeb;
   }
 
   &:focus {
@@ -101,7 +80,7 @@
   }
 
   .typical-button__rest {
-    background: #F2F2F2;
+    background: #f2f2f2;
     color: #444444;
   }
 }
@@ -117,34 +96,32 @@
   }
 
   .typical-button__rest {
-    background: #F2F2F2;
+    background: #f2f2f2;
     color: #444444;
   }
 }
 
 .typical-button-form {
+  .typical-button();
   width: 100%;
   height: 52px;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 0px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  border: none;
-  cursor: pointer;
-  background: #68b738;
 
   &:hover {
-    background: #5EAA2F;
+    background: #5eaa2f;
   }
 
   &:focus {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .typical-button-form {
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    background: #68b738;
   }
 }

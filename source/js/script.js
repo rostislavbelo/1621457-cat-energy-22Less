@@ -3,7 +3,7 @@ const menuActivate = document.querySelector(".nojs__main-menu");
 
 window.onload = function () {
   hamburgerActivate.classList.remove("nojs__header-toggle");
-  menuActivate.classList.remove("nojs__main-menu")
+  menuActivate.classList.remove("nojs__main-menu");
 };
 
 var hamburger = document.querySelector(".hamburger");
@@ -11,13 +11,13 @@ var mainNav = document.querySelector(".main-nav__list");
 
 hamburger.onclick = function () {
   hamburger.classList.toggle("hamburger--active");
-  mainNav.classList.toggle("main-nav__list--active")
+  mainNav.classList.toggle("main-nav__list--active");
 };
 
 const compSliderControl = document.querySelector(".progress-slider__input");
-const imageBefore = document.querySelector(".example__img-box--before")
-const imageAfter = document.querySelector(".example__img-box--after")
-const buttonBefore = document.querySelector(".progress-slider__button--start")
+const imageBefore = document.querySelector(".example__img-box--before");
+const imageAfter = document.querySelector(".example__img-box--after");
+const buttonBefore = document.querySelector(".progress-slider__button--start");
 const buttonAfter = document.querySelector(".progress-slider__button--end");
 
 
@@ -37,6 +37,3 @@ buttonAfter.onclick = function () {
   imageBefore.style.width = 0;
   compSliderControl.value = 100;
 };
-
-
-
