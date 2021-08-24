@@ -14,6 +14,7 @@
   margin: 0 auto;
   border: none;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     background: #5eaa2f;
@@ -98,6 +99,7 @@
   .typical-button__rest {
     background: #f2f2f2;
     color: #444444;
+    align-self: center;
   }
 }
 
@@ -123,5 +125,22 @@
     font-size: 16px;
     line-height: 20px;
     background: #68b738;
+  }
+}
+
+.typical-button__popup {
+  .typical-button();
+  background-color: #ffffff;
+  color: #5eaa2f;
+  font-size: 16px;
+  line-height: 20px;
+  width: 51%;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+
+  &:focus {
+    color: rgba(94, 170, 47, 0.5);
   }
 }

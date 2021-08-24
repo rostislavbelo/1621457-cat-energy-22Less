@@ -53,17 +53,54 @@ const scripts = () => {
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
-}
+  }
 
-exports.scripts = scripts;
+  exports.scripts = scripts;
+
+  const scripts2 = () => {
+    return gulp.src("source/js/popup-catalog.js")
+    .pipe(rename("popup-catalog.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(terser())
+    .pipe(rename("popup-catalog.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+  }
+
+  exports.scripts2 = scripts2;
+
+
+  const scripts3 = () => {
+    return gulp.src("source/js/slider.js")
+    .pipe(rename("slider.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(terser())
+    .pipe(rename("slider.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+  }
+
+  exports.scripts3 = scripts3;
+
+  const scripts4 = () => {
+    return gulp.src("source/js/popup-form.js")
+    .pipe(rename("popup-form.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(terser())
+    .pipe(rename("popup-form.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+  }
+
+  exports.scripts4 = scripts4;
 
 // Images
 
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({progressive: true}),
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
@@ -82,7 +119,7 @@ exports.images = copyImages;
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"))
 }
 
@@ -153,7 +190,10 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
-  gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/js/scripts.js", gulp.series(scripts));
+  gulp.watch("source/js/popup-catalog.js", gulp.series(scripts2));
+  gulp.watch("source/js/slider.js", gulp.series(scripts3));
+  gulp.watch("source/js/popup-form.js", gulp.series(scripts4));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
@@ -167,6 +207,9 @@ const build = gulp.series(
     styles,
     html,
     scripts,
+    scripts2,
+    scripts3,
+    scripts4,
     sprite,
     createWebp
   ),
@@ -185,6 +228,9 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
+    scripts2,
+    scripts3,
+    scripts4,
     sprite,
     createWebp
   ),
